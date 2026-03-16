@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F1923">
+  <meta name="description" content="Offline-first OCR powered by PaddleOCR — by ALTRU.dev, Code for Humanity. No servers, no API keys, no data leaves your device.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta property="og:title" content="ALTRU OCR — Offline Text Recognition">
+  <meta property="og:description" content="Free, private, offline OCR. Runs entirely in your browser via PaddleOCR + WebAssembly.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <title>ALTRU OCR — Offline Text Recognition</title>
+  <link rel="stylesheet" href="app.css">
+  <!-- ONNX Runtime Web — the only external dependency -->
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Loading state before JS initializes -->
+    <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;gap:1rem">
+      <div style="width:3rem;height:3rem;border-radius:0.75rem;background:linear-gradient(135deg,#FF6B6B,#2EC4B6);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:1.25rem">A</div>
+      <p style="color:rgba(255,255,255,0.5);font-size:0.85rem">Loading ALTRU OCR...</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
